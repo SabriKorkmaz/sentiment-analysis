@@ -34,10 +34,16 @@
 
 import Vue from 'vue'
 import Component from 'vue-class-component'
+import Graph from "./Graph.vue";
+import Comments from "./Comments.vue";
 
 // Define the component in class-style
-@Component
-export default class Counter extends Vue {
+@Component({
+  "header":Header,
+  "graph":Graph,
+  "comment":Comments,
+})
+export default class Header extends Vue {
   // Class properties will be component data
   count = 0
 
